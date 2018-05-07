@@ -1,0 +1,231 @@
+body
+{
+	background: #fff;
+}
+
+section
+{
+	padding: 50px;
+	width: calc(100% - 100px);
+	float: left;
+}
+
+label
+{
+	float: left;
+	clear: both;
+    width: 100%;
+}
+
+input, select
+{
+	float: left;
+	clear: both;
+}
+
+button
+{
+	line-height: 28px;
+}
+
+table
+{
+	width: 100%;
+}
+td 
+{
+	padding: 5px;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.row
+{
+	float: left;
+	width: 100%;
+}
+
+.row .column
+{
+	float: left;
+	padding-right: 5px;
+    width: calc(10% - 5px);
+}
+
+.row .hidden
+{
+	display: none;
+}
+
+.halfRow
+{
+	margin: 5px;
+	width: calc(50% - 30px);
+}
+
+.flexBox
+{
+	float: left;
+	width: 100%;
+	
+	display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.greyBackground
+{
+    background: #f6f6f6;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.error
+{
+    float: left;
+    padding: 10px;
+    width: 100%;
+    background: #ccc;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.answerTable td:first-of-type
+{
+    width: calc(100% - 120px);
+    line-height: 20px;
+    font-size: 1.3em;
+    padding: 20px;
+    padding-left: 0px;
+    position: relative;
+    float: left;
+    font-weight: 600;
+}
+.answerTable td:nth-of-type(2)
+{
+	position: relative;
+}
+.answerTable td select
+{
+    position: absolute;
+    bottom: 10px;
+    right: 0px;
+    width: 100px;
+}
+
+.toolkitQuestions
+{
+	display: none;
+}
+.toolkitIntro
+{
+	display: block;
+}
+
+.questionSet
+{
+	display: none;
+}
+
+.backButton
+{
+    float: left;
+    margin-left: calc(50% - 125px);
+    width: 200px;
+    text-align: center;
+    font-size: 1.3em;
+	cursor: pointer;
+}
+
+.progress
+{
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    width: calc(100% - 20px);
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+}
+.progressBar
+{
+	position: absolute;
+	left: 0px;
+	bottom: 14px;
+	height: 6px;
+	width: 0px;
+	border-radius: 6px;
+	background: #A38529;
+	z-index: -1;
+	
+	webkit-transition: all 0.2s ease-out;
+	-moz-transition: all 0.2s ease-out;
+	-ms-transition: all 0.2s ease-out;
+	-o-transition: all 0.2s ease-out;
+	transition: all 0.2s ease-out;
+}
+.progressIndicator
+{
+    float: left;
+    width: 100%;
+    flex: 1;
+    text-align: center;
+}
+.progressIndicator span
+{
+	color: #fff;
+    font-size: 16px;
+    font-weight: 900;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    background: #666;
+    border-radius: 50%;
+    margin-left: calc(50% - 15px);
+    float: left;
+	z-index: 1;
+	border: 4px solid #fff;
+	
+	webkit-transition: all 0.2s ease-out;
+	-moz-transition: all 0.2s ease-out;
+	-ms-transition: all 0.2s ease-out;
+	-o-transition: all 0.2s ease-out;
+	transition: all 0.2s ease-out;
+}
+.progressIndicator span i
+{
+    line-height: 30px;
+}
+.progressIndicator .active
+{
+    background: #A38529;
+}
+
+.startButton
+{
+    position: relative;
+    top: -3px;
+    color: #FFFFFF;
+    font-size: 12px;
+    box-shadow: 0 -3px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow: 0 -3px rgba(0, 0, 0, 0.1) inset;
+    -webkit-box-shadow: 0 -3px rgba(0, 0, 0, 0.1) inset;
+    -o-box-shadow: 0 -3px rgba(0, 0, 0, 0.1) inset;
+    text-transform: uppercase;
+    font-family: 'OpenSansbold';
+    letter-spacing: 2px;
+    margin-left: 20px;
+    line-height: 24px;
+    display: inline-block;
+    border-radius: 5px 5px 5px 5px;
+    padding: 16px 21px;
+    background-color: #A38529!important;
+    visibility: visible !important;
+    margin-left: calc(50% - 100px);
+    width: 100px;
+    text-align: center;
+    cursor: pointer;
+}
